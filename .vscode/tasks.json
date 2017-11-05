@@ -6,7 +6,17 @@
         {
             "taskName": "mpf",
             "type": "shell",
-            "command": "mpf -b"
+            "command": "mpf -b",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "taskName": "virtual mpf",
+            "type": "shell",
+            "command": "mpf -x",
+            "group": "build"
         }
     ]
 }
